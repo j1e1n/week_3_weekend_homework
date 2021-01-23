@@ -2,6 +2,9 @@ class Game:
 
     
     def get_winner(p1, p2):
+        if p1.choice == p2.choice:
+            return None
+
         if p1.choice == "rock":
             if p2.choice == "scissors":
                 return p1

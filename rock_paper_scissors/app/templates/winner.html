@@ -6,10 +6,13 @@
     <title>{{ title }} - Rock, Paper, Scissors</title>
 </head>
 <body>
+    {% if winner == None: %}
     <div>
+        <p>No winner</p>
+    {% else: %}
         <p>{{winner.name}} wins by playing {{winner.choice}}</p>
-      
-
     </div>
+    {% endif %}
+
 </body>
 </html>

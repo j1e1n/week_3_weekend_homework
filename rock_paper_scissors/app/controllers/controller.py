@@ -21,7 +21,7 @@ def submit_choices():
     p1 = Player(p1_name, p1_choice)
     p2 = Player(p2_name, p2_choice)
     winner = Game.get_winner(p1, p2)
-    return render_template("winner.html", title="winner", winner=winner)
+    return render_template("winner.html", title="Winner", winner=winner)
 
 
 
