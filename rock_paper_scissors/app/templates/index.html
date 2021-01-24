@@ -1,24 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - Rock, Paper, Scissors</title>
-</head>
-<body>
+
+{% extends "base.html" %}
+
+{% block content %}
+
     <div>
         <h1>Rock, Paper, Scissors!</h1>
         <h2>Rules</h2>
-        <p>.......
-            .......
+        <p>
+            There are two players.
+            Each player chooses one of three options, rock paper or scissors.
+            Rock beats scissors, paper beats rock and scissors beat paper.
+            Submit your choices to reveal the winner!
         </p>
 
-        <a href="/play">Play!</a>
-
-
+        <a href="/play">2 players</a> <br>
+        <a href="/play-computer">Play against the computer</a>
     </div>
 
-
-    
-</body>
-</html>
+{% endblock %}

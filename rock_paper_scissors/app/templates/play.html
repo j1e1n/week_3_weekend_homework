@@ -1,27 +1,21 @@
 
+{% extends "base.html" %}
 
+{% block content %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - Rock, Paper, Scissors</title>
-</head>
-<body>
-    <form action='/winner' method="POST">
-        <label for="player_1">Player 1 name:</label>
-        <input type="text" name="player_1" id="player_1">
-        <label for="choice_1">Choose rock, paper or scissors</label>
-        <input type="text" name="choice_1" id="choice_1">
-        <br><br>
-        <label for="player_2">Player 2 name:</label>
-        <input type="text" name="player_2" id="player_2">
-        <label for="choice_2">Choose rock, paper or scissors</label>
-        <input type="text" name="choice_2" id="choice_2">
-        <br><br>
-        <input type="submit" value="Submit Choices">
+<form action="/result" method="POST">
+    <label for="player_1">Player 1 name:</label>
+    <input type="text" name="player_1" id="player_1">
+    <label for="choice_1">Choose rock, paper or scissors</label>
+    <input type="text" name="choice_1" id="choice_1">
+    <br><br>
+    <label for="player_2">Player 2 name:</label>
+    <input type="text" name="player_2" id="player_2">
+    <label for="choice_2">Choose rock, paper or scissors</label>
+    <input type="text" name="choice_2" id="choice_2">
+    <br><br>
+    <input type="submit" value="Submit Choices">
 
-    </form>
-</body>
-</html>
+{% endblock %}
+
+    

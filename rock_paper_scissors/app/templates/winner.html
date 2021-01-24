@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - Rock, Paper, Scissors</title>
-</head>
-<body>
+
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+
     {% if winner == None: %}
     <div>
-        <p>No winner</p>
+        <p>No winner.</p>
     {% else: %}
         <p>{{winner.name}} wins by playing {{winner.choice}}</p>
     </div>
     {% endif %}
 
-</body>
-</html>
+{% endblock %}
