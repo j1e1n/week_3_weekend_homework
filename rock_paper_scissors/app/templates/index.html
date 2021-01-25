@@ -3,8 +3,11 @@
 
 {% block content %}
 
-    <div>
-        <h1>Rock, Paper, Scissors!</h1>
+</head>
+
+<h1>Rock, Paper, Scissors!</h1>
+    <div class="rules">
+        
         <h2>Rules</h2>
         <p>
             There are two players.
@@ -13,8 +16,8 @@
             Submit your choices to reveal the winner!
         </p>
 
-        <a href="/play">2 players</a> <br>
-        <a href="/play-computer">Play against the computer</a>
+        <a href="/play" class="two-player">2 players</a> <br>
+        <a href="/play-computer" class="pc">Play against the computer</a>
     </div>
 
 {% endblock %}
